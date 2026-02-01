@@ -1,0 +1,12 @@
+{
+  "name": "aws-transform-custom-container",
+  "version": "1.0.0",
+  "description": "Node.js dependencies for AWS Transform CLI container",
+  "dependencies": {},
+  "devDependencies": {
+    "yarn": "1.22.21",
+    "pnpm": "8.15.1",
+    "typescript": "5.3.3",
+    "ts-node": "10.9.2"
+  }
+}

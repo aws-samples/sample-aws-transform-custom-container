@@ -1,0 +1,37 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+*.md
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials and secrets
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+.env
+.env.*
+credentials
+secrets
+
+# Build artifacts
+*.log
+*.tmp
+.cache
+
+# Only include what's needed: Dockerfile, entrypoint.sh, download-source.sh, upload-results.sh, helpers/
