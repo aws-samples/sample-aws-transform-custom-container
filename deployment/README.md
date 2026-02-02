@@ -4,8 +4,8 @@ Simple 3-step deployment with least-privilege IAM permissions.
 
 ## Prerequisites
 
-- AWS CLI v2.13+ configured
-- Docker installed
+- Docker installed and running
+- AWS CLI v2.13+ installed and AWS credentials configured
 - Git, Bash
 
 ## AWS Profile Setup
