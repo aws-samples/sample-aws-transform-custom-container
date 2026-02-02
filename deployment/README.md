@@ -2,6 +2,14 @@
 
 Simple 3-step deployment with least-privilege IAM permissions.
 
+## Getting Started
+
+**Clone the repository:**
+```bash
+git clone https://github.com/aws-samples/sample-aws-transform-custom-container.git
+cd sample-aws-transform-custom-container/deployment
+```
+
 ## Prerequisites
 
 - Docker installed and running

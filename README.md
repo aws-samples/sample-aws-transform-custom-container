@@ -9,6 +9,14 @@
 > - Review the [Security Guide](docs/SECURITY.md) and implement additional controls as needed
 > - This code is provided "AS IS" without warranty of any kind (see LICENSE file)
 
+## Getting Started
+
+**Clone the repository:**
+```bash
+git clone https://github.com/aws-samples/sample-aws-transform-custom-container.git
+cd sample-aws-transform-custom-container
+```
+
 ## What is this?
 
 This project provides complete infrastructure to run AWS Transform custom at enterprise scale. Deploy with one command and get a REST API, batch processing for thousands of repositories, automatic credential management, and full monitoring - all using serverless AWS services.
