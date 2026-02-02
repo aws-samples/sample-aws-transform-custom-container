@@ -9,6 +9,14 @@
 > - Review the [Security Guide](docs/SECURITY.md) and implement additional controls as needed
 > - This code is provided "AS IS" without warranty of any kind (see LICENSE file)
 
+## Getting Started
+
+**Clone the repository:**
+```bash
+git clone https://github.com/aws-samples/sample-aws-transform-custom-container.git
+cd sample-aws-transform-custom-container
+```
+
 ## What is this?
 
 This project provides complete infrastructure to run AWS Transform custom at enterprise scale. Deploy with one command and get a REST API, batch processing for thousands of repositories, automatic credential management, and full monitoring - all using serverless AWS services.
@@ -27,7 +35,8 @@ This project provides complete infrastructure to run AWS Transform custom at ent
 
 ## Prerequisites
 
-- **Docker Desktop** and **AWS CLI v2** installed and running
+- **Docker Desktop** installed and running
+- **AWS CLI v2** installed and AWS credentials configured
 - **AWS account** with appropriate permissions
 - **Git** and **Bash shell**
 - **Node.js 18+** and **AWS CDK** (for CDK deployment only)
@@ -35,6 +44,7 @@ This project provides complete infrastructure to run AWS Transform custom at ent
 **Verify prerequisites:**
 ```bash
 cd deployment
+chmod +x check-prereqs.sh
 ./check-prereqs.sh
 ```
 
@@ -54,6 +64,7 @@ export CDK_DEFAULT_REGION=us-east-1
 **Set up IAM permissions (optional but recommended):**
 ```bash
 cd deployment
+chmod +x generate-custom-policy.sh
 ./generate-custom-policy.sh
 # Follow instructions to create and attach the policy
 ```
@@ -69,12 +80,9 @@ Choose your deployment method:
 ### Option 1: CDK Deployment (Recommended)
 
 ```bash
-# Clone repository
-git clone https://github.com/aws-samples/sample-aws-transform-custom-container
-cd sample-aws-transform-custom-container
-
-# Deploy with CDK (one command does everything!)
+# From sample-aws-transform-custom-container root
 cd cdk
+chmod +x deploy.sh
 ./deploy.sh
 ```
 
@@ -94,11 +102,8 @@ cd cdk
 ### Option 2: Bash Scripts
 
 ```bash
-# Clone repository
-git clone https://github.com/aws-samples/sample-aws-transform-custom-container
-cd sample-aws-transform-custom-container
-
-# Deploy (3 steps)
+# From sample-aws-transform-custom-container root
+cd deployment
 ./1-build-and-push.sh
 ./2-deploy-infrastructure.sh
 ./3-deploy-api.sh
@@ -192,6 +197,7 @@ Submit jobs via the REST API for easier management and monitoring.
 **Run comprehensive test suite:**
 ```bash
 cd test
+chmod +x test-apis.sh
 ./test-apis.sh
 ```
 
