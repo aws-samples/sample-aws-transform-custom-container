@@ -34,6 +34,11 @@ echo "✓ AWS Account: $AWS_ACCOUNT"
 echo "✓ AWS Region: $AWS_REGION"
 echo ""
 
+# Authenticate with ECR Public to avoid rate limiting
+echo "Authenticating with ECR Public..."
+aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
+echo ""
+
 # Install dependencies
 echo "Installing dependencies..."
 npm install
@@ -78,6 +83,6 @@ echo "✅ Deployment Complete!"
 echo "=========================================="
 echo ""
 echo "Next steps:"
-echo "  1. Get API endpoint: cdk output AtxApiStack.ApiEndpoint"
+echo '  1. Get API endpoint: export API_ENDPOINT=$(aws cloudformation describe-stacks --stack-name AtxApiStack --query "Stacks[0].Outputs[?OutputKey=='"'"'ApiEndpoint'"'"'].OutputValue" --output text)'
 echo "  2. Test job submission: See api/README.md"
 echo ""

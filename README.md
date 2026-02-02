@@ -331,7 +331,7 @@ To remove all deployed resources:
 **CDK Deployment:**
 ```bash
 cd cdk
-cdk destroy
+./destroy.sh
 ```
 
 **Bash Scripts Deployment:**
