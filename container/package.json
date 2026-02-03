@@ -5,7 +5,7 @@
   "dependencies": {},
   "devDependencies": {
     "yarn": "1.22.21",
-    "pnpm": "8.15.1",
+    "pnpm": "10.28.2",
     "typescript": "5.3.3",
     "ts-node": "10.9.2"
   }
