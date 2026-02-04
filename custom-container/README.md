@@ -13,8 +13,8 @@
 
 **Clone the repository:**
 ```bash
-git clone https://github.com/aws-samples/sample-aws-transform-custom-container.git
-cd sample-aws-transform-custom-container
+git clone https://github.com/aws-samples/aws-transfom-custom-samples.git
+cd aws-transfom-custom-samples/custom-container
 ```
 
 ## What is this?
@@ -80,7 +80,7 @@ Choose your deployment method:
 ### Option 1: CDK Deployment (Recommended)
 
 ```bash
-# From sample-aws-transform-custom-container root
+# From aws-transfom-custom-samples/custom-container root
 cd cdk
 chmod +x deploy.sh
 ./deploy.sh
@@ -102,7 +102,7 @@ chmod +x deploy.sh
 ### Option 2: Bash Scripts
 
 ```bash
-# From sample-aws-transform-custom-container root
+# From aws-transfom-custom-samples/custom-container root
 cd deployment
 ./1-build-and-push.sh
 ./2-deploy-infrastructure.sh
