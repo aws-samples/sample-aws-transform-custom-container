@@ -13,6 +13,10 @@ __pycache__/
 *.pyo
 .pytest_cache/
 *.egg-info/
+myenv/
+venv/
+.venv/
+env/
 
 # OS
 .DS_Store
