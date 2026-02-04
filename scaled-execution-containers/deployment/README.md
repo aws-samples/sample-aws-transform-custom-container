@@ -7,7 +7,7 @@ Simple 3-step deployment with least-privilege IAM permissions.
 **Clone the repository:**
 ```bash
 git clone https://github.com/aws-samples/aws-transform-custom-samples.git
-cd aws-transform-custom-samples/scaled-execution-containers/deployment
+cd aws-transform-custom-samples/scaled-execution-containers/
 ```
 
 ## Prerequisites

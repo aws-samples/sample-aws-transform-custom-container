@@ -23,19 +23,6 @@ CDK deployment provides a **fully automated, one-command deployment** that:
 - **Docker** (for building container image)
 - **Git** (for cloning repository)
 
-**Verify prerequisites:**
-```bash
-cd deployment
-./check-prereqs.sh
-```
-
-This validates Docker, AWS CLI v2, Git, Node.js, CDK CLI, VPC, and public subnets.
-
-**Verify Docker:**
-```bash
-docker --version
-docker info
-```
 
 ## AWS Profile Setup
 

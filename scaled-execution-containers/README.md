@@ -63,7 +63,6 @@ export CDK_DEFAULT_REGION=us-east-1
 
 **Set up IAM permissions (optional but recommended):**
 ```bash
-cd deployment
 chmod +x generate-custom-policy.sh
 ./generate-custom-policy.sh
 # Follow instructions to create and attach the policy
@@ -81,7 +80,7 @@ Choose your deployment method:
 
 ```bash
 # From aws-transform-custom-samples/scaled-execution-containers root
-cd cdk
+cd ../cdk
 chmod +x deploy.sh
 ./deploy.sh
 ```
@@ -103,7 +102,6 @@ chmod +x deploy.sh
 
 ```bash
 # From aws-transform-custom-samples/scaled-execution-containers root
-cd deployment
 ./1-build-and-push.sh
 ./2-deploy-infrastructure.sh
 ./3-deploy-api.sh
