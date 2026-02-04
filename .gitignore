@@ -23,5 +23,5 @@ env/
 Thumbs.db
 
 # Deployment artifacts
-deployment/.ecr-uri.txt
-cdk/cdk.context.json
+**/deployment/.ecr-uri.txt
+**/cdk.context.json
